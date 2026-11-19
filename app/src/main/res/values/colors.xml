@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_main_green">#306B61</color>
+    <color name="gold_yellow">#FFB82E</color>
+    <color name="light_teal_hint">#DCEBE7</color>
+    <color name="teal_text">#306B61</color>
+    <color name="btn_dark_teal">#306B61</color>
+    <color name="btn_light_teal">#DCEBE7</color>
+</resources>

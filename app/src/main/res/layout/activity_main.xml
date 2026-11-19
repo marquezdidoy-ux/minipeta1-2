@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main_green"
+    tools:context=".MainActivity"
+    tools:ignore="Autofill,LabelFor,TouchTargetSizeCheck,HardcodedText,RtlSymmetry,RtlHardcoded,TextFields,UseCompoundDrawables">
+
+    <!-- TOP SECTION -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="menu dots"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <!-- Graduation cap image -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/graduation_cap"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/graduation_cap_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fantastic"
+            android:textColor="@color/gold_yellow"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="app for students"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="teachers alike"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:maxWidth="488dp"
+            android:layout_marginTop="18dp"
+            android:hint="@string/email_or_phone_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_teal_hint"
+            android:textSize="13sp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:autofillHints="username"
+            android:importantForAutofill="no"
+            android:background="@drawable/bg_input" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:maxWidth="488dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/password_hint"
+            android:textColor="@color/white"
+            android:textColorHint="@color/light_teal_hint"
+            android:textSize="13sp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:importantForAutofill="no"
+            android:background="@drawable/bg_input" />
+
+    </LinearLayout>
+
+    <!-- BOTTOM WHITE PANEL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_bottom_panel">
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:gravity="center"
+            android:text="forgot password"
+            android:textColor="@color/teal_text"
+            android:textSize="12sp"
+            android:padding="6dp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="8dp"
+            android:text="login button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/btn_dark_teal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or divider"
+            android:textColor="@color/teal_text"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp" />
+
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:text="create account"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_dark_teal"
+            android:backgroundTint="@color/btn_light_teal" />
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/teal_text"
+            android:text=""
+            tools:text="Status message" />
+
+    </LinearLayout>
+
+</LinearLayout>

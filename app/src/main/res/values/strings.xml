@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">minipeta</string>
+    <string name="graduation_cap_desc">Graduation cap icon</string>
+    <string name="email_or_phone_hint">Email or Phone</string>
+    <string name="password_hint">Password</string>
+</resources>

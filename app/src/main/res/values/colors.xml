@@ -8,4 +8,6 @@
     <color name="teal_text">#306B61</color>
     <color name="btn_dark_teal">#306B61</color>
     <color name="btn_light_teal">#DCEBE7</color>
+    <color name="btn_view_green">#6BB343</color>
+    <color name="icon_circle_bg">#DCEBE7</color>
 </resources>

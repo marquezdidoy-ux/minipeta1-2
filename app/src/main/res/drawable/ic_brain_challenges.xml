@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="80">
+  <!-- Brain shape outline and fill -->
+  <path
+      android:fillColor="#FF8A8A"
+      android:pathData="M35,25 C30,15 45,5 50,15 C55,5 70,15 65,25 C75,25 80,38 75,48 C80,58 70,70 58,68 C52,73 48,73 42,68 C30,70 20,58 25,48 C20,38 25,25 35,25 Z"/>
+  <path
+      android:strokeColor="#C53939"
+      android:strokeWidth="2"
+      android:pathData="M50,15 L50,68 M40,28 C45,35 45,45 38,52 M60,28 C55,35 55,45 62,52 M32,38 C40,42 40,55 32,58 M68,38 C60,42 60,55 68,58"/>
+  <!-- Paper airplane flying across -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M65,20 L90,12 L75,32 L70,24 Z M70,24 L90,12 M70,24 L75,32"/>
+</vector>

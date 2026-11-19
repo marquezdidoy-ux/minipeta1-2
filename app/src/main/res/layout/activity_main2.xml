@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main_green"
+    tools:context=".MainActivity2"
+    tools:ignore="Autofill,LabelFor,TouchTargetSizeCheck,HardcodedText,RtlSymmetry,RtlHardcoded">
+
+    <!-- MAIN SCROLLABLE CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="16dp">
+
+            <!-- HEADER SECTION -->
+            <!-- Brain / Airplane Icon -->
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_brain_challenges"
+                android:scaleType="fitCenter"
+                android:contentDescription="Brain illustration" />
+
+            <!-- Title: Challenges -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Challenges"
+                android:textColor="@color/gold_yellow"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEST YOUR\nSKILLS!"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- 2x2 CARDS GRID -->
+
+            <!-- ROW 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:weightSum="2"
+                android:layout_marginBottom="16dp">
+
+                <!-- CARD 1: GenMath -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/cardGenMath"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:background="@drawable/bg_card_outline">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_calculator"
+                            android:contentDescription="GenMath icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="GenMath"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnViewGenMath"
+                        android:layout_width="88dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="8dp"
+                        android:text="VIEW"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/btn_view_green"
+                        android:padding="0dp" />
+
+                </LinearLayout>
+
+                <!-- CARD 2: ComProg -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/cardComProg"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:background="@drawable/bg_card_outline">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_laptop"
+                            android:contentDescription="ComProg icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ComProg"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnViewComProg"
+                        android:layout_width="88dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="8dp"
+                        android:text="VIEW"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/btn_view_green"
+                        android:padding="0dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ROW 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:weightSum="2"
+                android:layout_marginBottom="16dp">
+
+                <!-- CARD 3: Life & Career Skills -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/cardLifeCareer"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/bg_card_outline">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/graduation_cap"
+                            android:contentDescription="Life and Career Skills icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Life &amp; Career\nSkills"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnViewLifeCareer"
+                        android:layout_width="88dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="8dp"
+                        android:text="VIEW"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/btn_view_green"
+                        android:padding="0dp" />
+
+                </LinearLayout>
+
+                <!-- CARD 4: Effective Communications -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/cardCommunications"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="@drawable/bg_card_outline">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@drawable/ic_book"
+                            android:contentDescription="Effective Communications icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Effective\nCommunications"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnViewCommunications"
+                        android:layout_width="88dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="8dp"
+                        android:text="VIEW"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/btn_view_green"
+                        android:padding="0dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BOTTOM PANEL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:background="@drawable/bg_bottom_panel">
+
+        <!-- User profile section -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_user_profile"
+                android:contentDescription="User profile icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textColor="@color/gold_yellow"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+        <!-- Right icons: Notification & Settings -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/btnNotification"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_bell_notification"
+                android:background="@drawable/bg_circle_icon"
+                android:padding="7dp"
+                android:contentDescription="Notification bell" />
+
+            <ImageView
+                android:id="@+id/btnSettings"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_settings_gear"
+                android:background="@drawable/bg_circle_icon"
+                android:padding="7dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="Settings gear" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
